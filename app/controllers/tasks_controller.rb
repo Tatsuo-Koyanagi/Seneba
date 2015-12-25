@@ -61,6 +61,12 @@ class TasksController < ApplicationController
     end
   end
 
+  def search
+    @search_book = params["search_book"]
+    @tasks = Task.where("name LIKE '%#{params["search_book"]}%'")
+    render :index
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_task

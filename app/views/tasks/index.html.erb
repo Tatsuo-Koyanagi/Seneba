@@ -1,3 +1,8 @@
+<%= form_tag(:action=>"search") do  %>
+  <%=text_field_tag "search_book" ,@search_book %>
+  <%=submit_tag "検索"%>
+  <%=link_to "リセット" ,tasks_path %>
+<% end %>
 <h1>Listing tasks</h1>
 
 <table>
