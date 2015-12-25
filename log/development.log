@@ -1297,3 +1297,2820 @@ Processing by CategoriesController#index as HTML
   [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
   Rendered categories/index.html.erb within layouts/application (10.0ms)
 Completed 200 OK in 100ms (Views: 100.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/task" for 127.0.0.1 at 2015-12-25 15:59:09 +0900
+
+ActionController::RoutingError (No route matches [GET] "/task"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (60.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 15:59:13 +0900
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 109ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2015-12-25 15:59:14 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-25 15:59:14 +0900
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-25 15:59:14 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-25 15:59:14 +0900
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-25 15:59:14 +0900
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-12-25 15:59:14 +0900
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2015-12-25 15:59:14 +0900
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2015-12-25 15:59:14 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-25 15:59:14 +0900
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-25 15:59:14 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-25 15:59:14 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-25 15:59:14 +0900
+
+
+Started GET "/tasks/1" for 127.0.0.1 at 2015-12-25 15:59:16 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTask Load (0.0ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered tasks/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 94ms (Views: 93.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/1/edit" for 127.0.0.1 at 2015-12-25 15:59:18 +0900
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered tasks/_form.html.erb (0.0ms)
+  Rendered tasks/edit.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 128ms (Views: 128.0ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/tasks/1" for 127.0.0.1 at 2015-12-25 15:59:39 +0900
+Processing by TasksController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ClaeSS55upZ7D9SkU5/gnHjBosx/pZqC1rW09XcT3Ew=", "task"=>{"due_date(1i)"=>"2015", "due_date(2i)"=>"12", "due_date(3i)"=>"25", "name"=>"テスト", "category_id"=>"勉強", "done"=>"1", "user_id"=>"トム"}, "commit"=>"Update Task", "id"=>"1"}
+  [1m[35mTask Load (0.0ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  UPDATE "tasks" SET "category_id" = ?, "updated_at" = ?, "user_id" = ? WHERE "tasks"."id" = 1  [["category_id", "勉強"], ["updated_at", "2015-12-25 06:59:39.996695"], ["user_id", "トム"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/tasks/1
+Completed 302 Found in 16ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/1" for 127.0.0.1 at 2015-12-25 15:59:40 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTask Load (0.0ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered tasks/show.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 94ms (Views: 93.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-25 15:59:40 +0900
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2015-12-25 15:59:40 +0900
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-25 15:59:40 +0900
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2015-12-25 15:59:40 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-25 15:59:40 +0900
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-25 15:59:40 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-25 15:59:40 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-25 15:59:40 +0900
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-12-25 15:59:40 +0900
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2015-12-25 15:59:40 +0900
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-25 15:59:40 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-25 15:59:40 +0900
+
+
+Started GET "/tasks/1/edit" for 127.0.0.1 at 2015-12-25 15:59:44 +0900
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered tasks/_form.html.erb (0.0ms)
+  Rendered tasks/edit.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 109ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 15:59:45 +0900
+Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.0ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 109ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/2/edit" for 127.0.0.1 at 2015-12-25 15:59:49 +0900
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered tasks/_form.html.erb (15.6ms)
+  Rendered tasks/edit.html.erb within layouts/application (31.2ms)
+Completed 200 OK in 140ms (Views: 140.4ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/tasks/2" for 127.0.0.1 at 2015-12-25 16:00:41 +0900
+Processing by TasksController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ClaeSS55upZ7D9SkU5/gnHjBosx/pZqC1rW09XcT3Ew=", "task"=>{"due_date(1i)"=>"2016", "due_date(2i)"=>"1", "due_date(3i)"=>"1", "name"=>"バスケットボール上達法", "category_id"=>"部活動", "done"=>"0", "user_id"=>"花子"}, "commit"=>"Update Task", "id"=>"2"}
+  [1m[35mTask Load (0.0ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  UPDATE "tasks" SET "category_id" = ?, "name" = ?, "updated_at" = ?, "user_id" = ? WHERE "tasks"."id" = 2  [["category_id", "部活動"], ["name", "バスケットボール上達法"], ["updated_at", "2015-12-25 07:00:41.192288"], ["user_id", "花子"]]
+  [1m[36m (10.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/tasks/2
+Completed 302 Found in 10ms (ActiveRecord: 10.0ms)
+
+
+Started GET "/tasks/2" for 127.0.0.1 at 2015-12-25 16:00:41 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mTask Load (0.0ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered tasks/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 100ms (Views: 90.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-25 16:00:41 +0900
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2015-12-25 16:00:41 +0900
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2015-12-25 16:00:41 +0900
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-25 16:00:41 +0900
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-25 16:00:41 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-25 16:00:41 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-25 16:00:41 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-25 16:00:41 +0900
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-12-25 16:00:41 +0900
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2015-12-25 16:00:41 +0900
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-25 16:00:41 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-25 16:00:41 +0900
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:00:42 +0900
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 110ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:18:08 +0900
+Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.0ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 109ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2015-12-25 16:18:09 +0900
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-25 16:18:09 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-25 16:18:09 +0900
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2015-12-25 16:18:09 +0900
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-25 16:18:09 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-25 16:18:09 +0900
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-12-25 16:18:09 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-25 16:18:09 +0900
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2015-12-25 16:18:09 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-25 16:18:09 +0900
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-25 16:18:09 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-25 16:18:09 +0900
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2015-12-25 16:18:12 +0900
+Processing by TasksController#new as HTML
+  Rendered tasks/_form.html.erb (40.0ms)
+  Rendered tasks/new.html.erb within layouts/application (40.0ms)
+Completed 500 Internal Server Error in 50ms
+
+SyntaxError (C:/ToDoList/app/views/tasks/_form.html.erb:37: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+C:/ToDoList/app/views/tasks/_form.html.erb:39: syntax error, unexpected keyword_ensure, expecting ')'
+C:/ToDoList/app/views/tasks/_form.html.erb:41: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/tasks/_form.html.erb:37: syntax error, unexpected keyword_end, expecting ')'
+  app/views/tasks/_form.html.erb:39: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/tasks/_form.html.erb:41: syntax error, unexpected keyword_end, expecting ')'
+  app/views/tasks/new.html.erb:3:in `_app_views_tasks_new_html_erb__887036300_54238872'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (50.0ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2015-12-25 16:18:12 +0900
+Processing by TasksController#new as HTML
+  Rendered tasks/_form.html.erb (0.0ms)
+  Rendered tasks/new.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 10ms
+
+SyntaxError (C:/ToDoList/app/views/tasks/_form.html.erb:37: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+C:/ToDoList/app/views/tasks/_form.html.erb:39: syntax error, unexpected keyword_ensure, expecting ')'
+C:/ToDoList/app/views/tasks/_form.html.erb:41: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/tasks/_form.html.erb:37: syntax error, unexpected keyword_end, expecting ')'
+  app/views/tasks/_form.html.erb:39: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/tasks/_form.html.erb:41: syntax error, unexpected keyword_end, expecting ')'
+  app/views/tasks/new.html.erb:3:in `_app_views_tasks_new_html_erb__887036300_45476820'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (50.0ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2015-12-25 16:19:00 +0900
+Processing by TasksController#new as HTML
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered tasks/_form.html.erb (46.8ms)
+  Rendered tasks/new.html.erb within layouts/application (46.8ms)
+Completed 200 OK in 156ms (Views: 156.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2015-12-25 16:25:52 +0900
+Processing by TasksController#new as HTML
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered tasks/_form.html.erb (15.6ms)
+  Rendered tasks/new.html.erb within layouts/application (31.2ms)
+Completed 200 OK in 125ms (Views: 124.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2015-12-25 16:25:52 +0900
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-25 16:25:52 +0900
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2015-12-25 16:25:52 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-25 16:25:52 +0900
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-25 16:25:52 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-25 16:25:52 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-25 16:25:52 +0900
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-12-25 16:25:52 +0900
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2015-12-25 16:25:52 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-25 16:25:52 +0900
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-25 16:25:52 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-25 16:25:52 +0900
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:26:02 +0900
+Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.0ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 120ms (Views: 120.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2015-12-25 16:26:03 +0900
+Processing by TasksController#new as HTML
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"
+  Rendered tasks/_form.html.erb (20.0ms)
+  Rendered tasks/new.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 130ms (Views: 130.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:26:35 +0900
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 109ms (Views: 93.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/1" for 127.0.0.1 at 2015-12-25 16:26:37 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTask Load (0.0ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered tasks/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 109ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/1/edit" for 127.0.0.1 at 2015-12-25 16:26:54 +0900
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTask Load (15.6ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered tasks/_form.html.erb (15.6ms)
+  Rendered tasks/edit.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 125ms (Views: 109.2ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/tasks/1/edit" for 127.0.0.1 at 2015-12-25 16:28:16 +0900
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTask Load (0.0ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"
+  Rendered tasks/_form.html.erb (10.0ms)
+  Rendered tasks/edit.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 106ms (Views: 105.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2015-12-25 16:28:16 +0900
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-25 16:28:16 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-25 16:28:16 +0900
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2015-12-25 16:28:16 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-25 16:28:16 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-25 16:28:16 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-25 16:28:16 +0900
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-25 16:28:16 +0900
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-12-25 16:28:16 +0900
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2015-12-25 16:28:16 +0900
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-25 16:28:16 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-25 16:28:16 +0900
+
+
+Started PATCH "/tasks/1" for 127.0.0.1 at 2015-12-25 16:28:22 +0900
+Processing by TasksController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ClaeSS55upZ7D9SkU5/gnHjBosx/pZqC1rW09XcT3Ew=", "task"=>{"due_date(1i)"=>"2015", "due_date(2i)"=>"12", "due_date(3i)"=>"25", "name"=>"テスト", "done"=>"1"}, "category_id"=>{"category"=>"1"}, "user_id"=>{"user"=>"2"}, "commit"=>"Update Task", "id"=>"1"}
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/tasks/1
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/1" for 127.0.0.1 at 2015-12-25 16:28:22 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTask Load (0.0ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered tasks/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 109ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-25 16:28:22 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-25 16:28:22 +0900
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2015-12-25 16:28:22 +0900
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-25 16:28:22 +0900
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-25 16:28:22 +0900
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2015-12-25 16:28:22 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-25 16:28:22 +0900
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-12-25 16:28:22 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-25 16:28:22 +0900
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-25 16:28:22 +0900
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2015-12-25 16:28:22 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-25 16:28:22 +0900
+
+
+Started GET "/tasks/1/edit" for 127.0.0.1 at 2015-12-25 16:28:24 +0900
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered tasks/_form.html.erb (15.6ms)
+  Rendered tasks/edit.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 129ms (Views: 129.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:28:25 +0900
+Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.0ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 110ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/2" for 127.0.0.1 at 2015-12-25 16:28:28 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered tasks/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 109ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/2/edit" for 127.0.0.1 at 2015-12-25 16:28:30 +0900
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mTask Load (0.0ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"
+  Rendered tasks/_form.html.erb (10.0ms)
+  Rendered tasks/edit.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 110ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:28:32 +0900
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 131ms (Views: 131.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/2" for 127.0.0.1 at 2015-12-25 16:28:33 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mTask Load (0.0ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered tasks/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 110ms (Views: 100.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/2/edit" for 127.0.0.1 at 2015-12-25 16:28:35 +0900
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered tasks/_form.html.erb (15.6ms)
+  Rendered tasks/edit.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 125ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:31:37 +0900
+Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.0ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 109ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2015-12-25 16:31:38 +0900
+Processing by TasksController#new as HTML
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"
+  Rendered tasks/_form.html.erb (0.0ms)
+  Rendered tasks/new.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 109ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:31:45 +0900
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 110ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2015-12-25 16:31:47 +0900
+Processing by TasksController#new as HTML
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered tasks/_form.html.erb (10.0ms)
+  Rendered tasks/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 120ms (Views: 120.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:34:49 +0900
+Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.0ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 109ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/1" for 127.0.0.1 at 2015-12-25 16:34:51 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered tasks/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 100ms (Views: 100.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:34:52 +0900
+Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.0ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 125ms (Views: 124.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2015-12-25 16:34:53 +0900
+Processing by TasksController#new as HTML
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"
+  Rendered tasks/_form.html.erb (30.0ms)
+  Rendered tasks/new.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 130ms (Views: 120.0ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:34:56 +0900
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 109ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/2" for 127.0.0.1 at 2015-12-25 16:34:57 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mTask Load (0.0ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered tasks/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 109ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:34:58 +0900
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 94ms (Views: 93.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/2/edit" for 127.0.0.1 at 2015-12-25 16:34:59 +0900
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mTask Load (0.0ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2]]
+Completed 404 Not Found in 0ms
+
+ActiveRecord::RecordNotFound (Couldn't find Task without an ID):
+  app/controllers/tasks_controller.rb:22:in `edit'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (62.4ms)
+
+
+Started GET "/tasks/2/edit" for 127.0.0.1 at 2015-12-25 16:34:59 +0900
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 404 Not Found in 0ms
+
+ActiveRecord::RecordNotFound (Couldn't find Task without an ID):
+  app/controllers/tasks_controller.rb:22:in `edit'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (46.8ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:35:51 +0900
+Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.0ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 110ms (Views: 100.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2015-12-25 16:35:52 +0900
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2015-12-25 16:35:52 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-25 16:35:52 +0900
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-25 16:35:52 +0900
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-25 16:35:52 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-25 16:35:52 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-25 16:35:52 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-25 16:35:52 +0900
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2015-12-25 16:35:52 +0900
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-12-25 16:35:52 +0900
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-25 16:35:52 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-25 16:35:52 +0900
+
+
+Started GET "/tasks/2/edit" for 127.0.0.1 at 2015-12-25 16:35:53 +0900
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered tasks/_form.html.erb (30.0ms)
+  Rendered tasks/edit.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 150ms (Views: 150.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:35:56 +0900
+Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.0ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 109ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/2/edit" for 127.0.0.1 at 2015-12-25 16:35:57 +0900
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered tasks/_form.html.erb (0.0ms)
+  Rendered tasks/edit.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 125ms (Views: 124.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:36:32 +0900
+Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.0ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 109ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/2" for 127.0.0.1 at 2015-12-25 16:36:38 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered tasks/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 109ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:36:39 +0900
+Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.0ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 109ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/2/edit" for 127.0.0.1 at 2015-12-25 16:36:40 +0900
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered tasks/_form.html.erb (15.6ms)
+  Rendered tasks/edit.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 109ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/2/edit" for 127.0.0.1 at 2015-12-25 16:38:57 +0900
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mTask Load (0.0ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered tasks/_form.html.erb (15.6ms)
+  Rendered tasks/edit.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 125ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2015-12-25 16:38:57 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-25 16:38:58 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-25 16:38:58 +0900
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-25 16:38:58 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-25 16:38:58 +0900
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2015-12-25 16:38:58 +0900
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-12-25 16:38:58 +0900
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-25 16:38:58 +0900
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2015-12-25 16:38:58 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-25 16:38:58 +0900
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-25 16:38:58 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-25 16:38:58 +0900
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:39:00 +0900
+Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.0ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 94ms (Views: 93.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/2" for 127.0.0.1 at 2015-12-25 16:39:01 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered tasks/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 109ms (Views: 93.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:39:04 +0900
+Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.0ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 125ms (Views: 124.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/2/edit" for 127.0.0.1 at 2015-12-25 16:39:05 +0900
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users"
+  Rendered tasks/_form.html.erb (15.6ms)
+  Rendered tasks/edit.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 140ms (Views: 124.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:39:49 +0900
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 90ms (Views: 90.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/2/edit" for 127.0.0.1 at 2015-12-25 16:40:53 +0900
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mTask Load (0.0ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mUser Load (10.0ms)[0m  SELECT "users".* FROM "users"
+  Rendered tasks/_form.html.erb (10.0ms)
+  Rendered tasks/edit.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 110ms (Views: 100.0ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:40:57 +0900
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 109ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/2/edit" for 127.0.0.1 at 2015-12-25 16:41:00 +0900
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mTask Load (0.0ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mUser Load (15.6ms)[0m  SELECT "users".* FROM "users"
+  Rendered tasks/_form.html.erb (15.6ms)
+  Rendered tasks/edit.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 109ms (Views: 93.6ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:41:01 +0900
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 90ms (Views: 90.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/1/edit" for 127.0.0.1 at 2015-12-25 16:42:08 +0900
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTask Load (0.0ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"
+  Rendered tasks/_form.html.erb (15.6ms)
+  Rendered tasks/edit.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 109ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/1/edit" for 127.0.0.1 at 2015-12-25 16:42:16 +0900
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered tasks/_form.html.erb (0.0ms)
+  Rendered tasks/edit.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 125ms (Views: 124.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2015-12-25 16:42:16 +0900
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2015-12-25 16:42:16 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-25 16:42:16 +0900
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-25 16:42:16 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-25 16:42:16 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-25 16:42:16 +0900
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-12-25 16:42:16 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-25 16:42:16 +0900
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-25 16:42:16 +0900
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2015-12-25 16:42:16 +0900
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-25 16:42:16 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-25 16:42:16 +0900
+
+
+Started GET "/tasks/1" for 127.0.0.1 at 2015-12-25 16:42:19 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTask Load (0.0ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered tasks/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 109ms (Views: 93.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/1/edit" for 127.0.0.1 at 2015-12-25 16:42:23 +0900
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered tasks/_form.html.erb (15.6ms)
+  Rendered tasks/edit.html.erb within layouts/application (31.2ms)
+Completed 200 OK in 140ms (Views: 140.4ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/tasks/1" for 127.0.0.1 at 2015-12-25 16:42:25 +0900
+Processing by TasksController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ClaeSS55upZ7D9SkU5/gnHjBosx/pZqC1rW09XcT3Ew=", "task"=>{"due_date(1i)"=>"2015", "due_date(2i)"=>"12", "due_date(3i)"=>"25", "name"=>"テスト", "done"=>"1"}, "category_id"=>{"category"=>"1"}, "user_id"=>{"user"=>"2"}, "commit"=>"Update Task", "id"=>"1"}
+  [1m[35mTask Load (0.0ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/tasks/1
+Completed 302 Found in 16ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/1" for 127.0.0.1 at 2015-12-25 16:42:26 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered tasks/show.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 94ms (Views: 93.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2015-12-25 16:42:26 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-25 16:42:26 +0900
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-25 16:42:26 +0900
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2015-12-25 16:42:26 +0900
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-25 16:42:26 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-25 16:42:26 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-25 16:42:26 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-25 16:42:26 +0900
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-12-25 16:42:26 +0900
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2015-12-25 16:42:26 +0900
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-25 16:42:26 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-25 16:42:26 +0900
+
+
+Started GET "/tasks/1/edit" for 127.0.0.1 at 2015-12-25 16:42:28 +0900
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTask Load (0.0ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"
+  Rendered tasks/_form.html.erb (15.6ms)
+  Rendered tasks/edit.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 109ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:42:31 +0900
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 109ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/2" for 127.0.0.1 at 2015-12-25 16:42:33 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mTask Load (0.0ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered tasks/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 109ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:42:34 +0900
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 109ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/2/edit" for 127.0.0.1 at 2015-12-25 16:42:36 +0900
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mTask Load (0.0ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"
+  Rendered tasks/_form.html.erb (15.6ms)
+  Rendered tasks/edit.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 125ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/2" for 127.0.0.1 at 2015-12-25 16:42:38 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered tasks/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 109ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:42:39 +0900
+Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.0ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 110ms (Views: 100.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/2/edit" for 127.0.0.1 at 2015-12-25 16:42:41 +0900
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered tasks/_form.html.erb (20.0ms)
+  Rendered tasks/edit.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 120ms (Views: 120.0ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/tasks/2" for 127.0.0.1 at 2015-12-25 16:42:45 +0900
+Processing by TasksController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ClaeSS55upZ7D9SkU5/gnHjBosx/pZqC1rW09XcT3Ew=", "task"=>{"due_date(1i)"=>"2016", "due_date(2i)"=>"1", "due_date(3i)"=>"1", "name"=>"バスケットボール上達法", "done"=>"0"}, "category_id"=>{"category"=>"1"}, "user_id"=>{"user"=>"2"}, "commit"=>"Update Task", "id"=>"2"}
+  [1m[35mTask Load (0.0ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/tasks/2
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/2" for 127.0.0.1 at 2015-12-25 16:42:45 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered tasks/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 94ms (Views: 93.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2015-12-25 16:42:45 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-25 16:42:45 +0900
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-25 16:42:45 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-25 16:42:45 +0900
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-25 16:42:45 +0900
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2015-12-25 16:42:45 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-25 16:42:45 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-25 16:42:45 +0900
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-12-25 16:42:45 +0900
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2015-12-25 16:42:45 +0900
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-25 16:42:45 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-25 16:42:45 +0900
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:42:46 +0900
+Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.0ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 109ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/2/edit" for 127.0.0.1 at 2015-12-25 16:42:49 +0900
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered tasks/_form.html.erb (15.6ms)
+  Rendered tasks/edit.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 140ms (Views: 124.8ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/tasks/2" for 127.0.0.1 at 2015-12-25 16:42:52 +0900
+Processing by TasksController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ClaeSS55upZ7D9SkU5/gnHjBosx/pZqC1rW09XcT3Ew=", "task"=>{"due_date(1i)"=>"2016", "due_date(2i)"=>"1", "due_date(3i)"=>"1", "name"=>"バスケットボール上達法", "done"=>"0"}, "category_id"=>{"category"=>"1"}, "user_id"=>{"user"=>"2"}, "commit"=>"Update Task", "id"=>"2"}
+  [1m[35mTask Load (0.0ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/tasks/2
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/2" for 127.0.0.1 at 2015-12-25 16:42:52 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered tasks/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 94ms (Views: 93.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-25 16:42:52 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-25 16:42:52 +0900
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-25 16:42:52 +0900
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-25 16:42:52 +0900
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2015-12-25 16:42:52 +0900
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2015-12-25 16:42:52 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-25 16:42:52 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-25 16:42:52 +0900
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-12-25 16:42:52 +0900
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2015-12-25 16:42:52 +0900
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-25 16:42:52 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-25 16:42:52 +0900
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:43:00 +0900
+Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.0ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 100ms (Views: 100.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/2/edit" for 127.0.0.1 at 2015-12-25 16:43:02 +0900
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered tasks/_form.html.erb (10.0ms)
+  Rendered tasks/edit.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 116ms (Views: 100.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/2" for 127.0.0.1 at 2015-12-25 16:43:05 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mTask Load (0.0ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered tasks/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 94ms (Views: 93.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:43:06 +0900
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 109ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/2/edit" for 127.0.0.1 at 2015-12-25 16:43:08 +0900
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mTask Load (0.0ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"
+  Rendered tasks/_form.html.erb (15.6ms)
+  Rendered tasks/edit.html.erb within layouts/application (31.2ms)
+Completed 200 OK in 125ms (Views: 124.8ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/tasks/2" for 127.0.0.1 at 2015-12-25 16:43:10 +0900
+Processing by TasksController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ClaeSS55upZ7D9SkU5/gnHjBosx/pZqC1rW09XcT3Ew=", "task"=>{"due_date(1i)"=>"2016", "due_date(2i)"=>"1", "due_date(3i)"=>"1", "name"=>"バスケットボール上達法", "done"=>"0"}, "category_id"=>{"category"=>"1"}, "user_id"=>{"user"=>"2"}, "commit"=>"Update Task", "id"=>"2"}
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/tasks/2
+Completed 302 Found in 16ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/2" for 127.0.0.1 at 2015-12-25 16:43:10 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mTask Load (0.0ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered tasks/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 94ms (Views: 93.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2015-12-25 16:43:11 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-25 16:43:11 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-25 16:43:11 +0900
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-25 16:43:11 +0900
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-25 16:43:11 +0900
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2015-12-25 16:43:11 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-25 16:43:11 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-25 16:43:11 +0900
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-25 16:43:11 +0900
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2015-12-25 16:43:11 +0900
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-12-25 16:43:11 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-25 16:43:11 +0900
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:43:13 +0900
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 109ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2015-12-25 16:43:54 +0900
+Processing by TasksController#new as HTML
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered tasks/_form.html.erb (15.6ms)
+  Rendered tasks/new.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 109ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2015-12-25 16:43:57 +0900
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ClaeSS55upZ7D9SkU5/gnHjBosx/pZqC1rW09XcT3Ew=", "task"=>{"due_date(1i)"=>"2015", "due_date(2i)"=>"12", "due_date(3i)"=>"25", "name"=>"", "done"=>"0"}, "category_id"=>{"category"=>"1"}, "user_id"=>{"user"=>"2"}, "commit"=>"Create Task"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "tasks" ("created_at", "done", "due_date", "name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2015-12-25 07:43:57.066538"], ["done", "f"], ["due_date", "2015-12-25"], ["name", ""], ["updated_at", "2015-12-25 07:43:57.066538"]]
+  [1m[35m (31.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/tasks/3
+Completed 302 Found in 47ms (ActiveRecord: 31.2ms)
+
+
+Started GET "/tasks/3" for 127.0.0.1 at 2015-12-25 16:43:57 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered tasks/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 94ms (Views: 93.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2015-12-25 16:43:57 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-25 16:43:57 +0900
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2015-12-25 16:43:57 +0900
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-25 16:43:57 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-25 16:43:57 +0900
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-25 16:43:57 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-25 16:43:57 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-25 16:43:57 +0900
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-12-25 16:43:57 +0900
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2015-12-25 16:43:57 +0900
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-25 16:43:57 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-25 16:43:57 +0900
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:43:59 +0900
+Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.0ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 125ms (Views: 124.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2015-12-25 16:44:02 +0900
+Processing by TasksController#new as HTML
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"
+  Rendered tasks/_form.html.erb (15.6ms)
+  Rendered tasks/new.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 109ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:44:07 +0900
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 120ms (Views: 120.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/3/edit" for 127.0.0.1 at 2015-12-25 16:44:10 +0900
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mTask Load (0.0ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"
+  Rendered tasks/_form.html.erb (0.0ms)
+  Rendered tasks/edit.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 109ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/3" for 127.0.0.1 at 2015-12-25 16:44:12 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered tasks/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 110ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:44:17 +0900
+Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.0ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 109ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/3/edit" for 127.0.0.1 at 2015-12-25 16:44:19 +0900
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered tasks/_form.html.erb (15.6ms)
+  Rendered tasks/edit.html.erb within layouts/application (31.2ms)
+Completed 200 OK in 109ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started PATCH "/tasks/3" for 127.0.0.1 at 2015-12-25 16:44:21 +0900
+Processing by TasksController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ClaeSS55upZ7D9SkU5/gnHjBosx/pZqC1rW09XcT3Ew=", "task"=>{"due_date(1i)"=>"2015", "due_date(2i)"=>"12", "due_date(3i)"=>"25", "name"=>"", "done"=>"0"}, "category_id"=>{"category"=>"1"}, "user_id"=>{"user"=>"2"}, "commit"=>"Update Task", "id"=>"3"}
+  [1m[35mTask Load (0.0ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/tasks/3
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/3" for 127.0.0.1 at 2015-12-25 16:44:21 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered tasks/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 94ms (Views: 93.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2015-12-25 16:44:21 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-25 16:44:21 +0900
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-25 16:44:21 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-25 16:44:21 +0900
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-25 16:44:21 +0900
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2015-12-25 16:44:21 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-25 16:44:21 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-25 16:44:21 +0900
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-12-25 16:44:21 +0900
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2015-12-25 16:44:21 +0900
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-25 16:44:21 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-25 16:44:21 +0900
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:44:23 +0900
+Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.0ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 109ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/1/edit" for 127.0.0.1 at 2015-12-25 16:45:07 +0900
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTask Load (15.6ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered tasks/_form.html.erb (15.6ms)
+  Rendered tasks/edit.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 125ms (Views: 109.2ms | ActiveRecord: 15.6ms)
+
+
+Started PATCH "/tasks/1" for 127.0.0.1 at 2015-12-25 16:45:13 +0900
+Processing by TasksController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ClaeSS55upZ7D9SkU5/gnHjBosx/pZqC1rW09XcT3Ew=", "task"=>{"due_date(1i)"=>"2015", "due_date(2i)"=>"12", "due_date(3i)"=>"25", "name"=>"テスト", "done"=>"1"}, "category_id"=>{"category"=>"2"}, "user_id"=>{"user"=>"1"}, "commit"=>"Update Task", "id"=>"1"}
+  [1m[35mTask Load (0.0ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/tasks/1
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/1" for 127.0.0.1 at 2015-12-25 16:45:13 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered tasks/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 94ms (Views: 93.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-25 16:45:13 +0900
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2015-12-25 16:45:13 +0900
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-25 16:45:13 +0900
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2015-12-25 16:45:13 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-25 16:45:13 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-25 16:45:13 +0900
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-25 16:45:13 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-25 16:45:13 +0900
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-12-25 16:45:13 +0900
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2015-12-25 16:45:13 +0900
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-25 16:45:13 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-25 16:45:13 +0900
+
+
+Started GET "/tasks/1/edit" for 127.0.0.1 at 2015-12-25 16:45:15 +0900
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTask Load (0.0ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"
+  Rendered tasks/_form.html.erb (15.6ms)
+  Rendered tasks/edit.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 125ms (Views: 124.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:45:16 +0900
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 109ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2015-12-25 16:45:19 +0900
+Processing by TasksController#new as HTML
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered tasks/_form.html.erb (10.0ms)
+  Rendered tasks/new.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 110ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2015-12-25 16:45:23 +0900
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ClaeSS55upZ7D9SkU5/gnHjBosx/pZqC1rW09XcT3Ew=", "task"=>{"due_date(1i)"=>"2015", "due_date(2i)"=>"12", "due_date(3i)"=>"25", "name"=>"", "done"=>"0"}, "category_id"=>{"category"=>"1"}, "user_id"=>{"user"=>"2"}, "commit"=>"Create Task"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "tasks" ("created_at", "done", "due_date", "name", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2015-12-25 07:45:23.228938"], ["done", "f"], ["due_date", "2015-12-25"], ["name", ""], ["updated_at", "2015-12-25 07:45:23.228938"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/tasks/4
+Completed 302 Found in 16ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/4" for 127.0.0.1 at 2015-12-25 16:45:23 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered tasks/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 94ms (Views: 93.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-25 16:45:23 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-25 16:45:23 +0900
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-25 16:45:23 +0900
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2015-12-25 16:45:23 +0900
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-25 16:45:23 +0900
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2015-12-25 16:45:23 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-25 16:45:23 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-25 16:45:23 +0900
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-12-25 16:45:23 +0900
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-25 16:45:23 +0900
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2015-12-25 16:45:23 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-25 16:45:23 +0900
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:45:24 +0900
+Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.0ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 125ms (Views: 124.8ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/tasks/4" for 127.0.0.1 at 2015-12-25 16:46:02 +0900
+Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ClaeSS55upZ7D9SkU5/gnHjBosx/pZqC1rW09XcT3Ew=", "id"=>"4"}
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 4]]
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 16ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:46:02 +0900
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 94ms (Views: 93.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-25 16:46:02 +0900
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-25 16:46:02 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-25 16:46:02 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-25 16:46:02 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-25 16:46:02 +0900
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2015-12-25 16:46:02 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-25 16:46:02 +0900
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2015-12-25 16:46:02 +0900
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-12-25 16:46:03 +0900
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2015-12-25 16:46:03 +0900
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-25 16:46:03 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-25 16:46:03 +0900
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:47:04 +0900
+Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.0ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 100ms (Views: 100.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2015-12-25 16:47:04 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-25 16:47:04 +0900
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-25 16:47:04 +0900
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2015-12-25 16:47:04 +0900
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-25 16:47:04 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-25 16:47:04 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-25 16:47:04 +0900
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2015-12-25 16:47:04 +0900
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-25 16:47:04 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-25 16:47:04 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-25 16:47:04 +0900
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-12-25 16:47:04 +0900
+
+
+Started GET "/tasks/3/edit" for 127.0.0.1 at 2015-12-25 16:47:06 +0900
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered tasks/_form.html.erb (15.6ms)
+  Rendered tasks/edit.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 125ms (Views: 124.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:47:07 +0900
+Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.0ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 110ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2015-12-25 16:47:08 +0900
+Processing by TasksController#new as HTML
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"
+  Rendered tasks/_form.html.erb (10.0ms)
+  Rendered tasks/new.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 110ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2015-12-25 16:47:10 +0900
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ClaeSS55upZ7D9SkU5/gnHjBosx/pZqC1rW09XcT3Ew=", "task"=>{"due_date(1i)"=>"2015", "due_date(2i)"=>"12", "due_date(3i)"=>"25", "name"=>"", "done"=>"0"}, "category_id"=>{"category"=>"1"}, "user_id"=>{"user"=>"1"}, "commit"=>"Create Task"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "tasks" ("created_at", "done", "due_date", "name", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", "2015-12-25 07:47:10.109538"], ["done", "f"], ["due_date", "2015-12-25"], ["name", ""], ["updated_at", "2015-12-25 07:47:10.109538"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/tasks/5
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/5" for 127.0.0.1 at 2015-12-25 16:47:10 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mTask Load (0.0ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered tasks/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 94ms (Views: 93.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2015-12-25 16:47:10 +0900
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-25 16:47:10 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-25 16:47:10 +0900
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-25 16:47:10 +0900
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2015-12-25 16:47:10 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-25 16:47:10 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-25 16:47:10 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-25 16:47:10 +0900
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-12-25 16:47:10 +0900
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2015-12-25 16:47:10 +0900
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-25 16:47:10 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-25 16:47:10 +0900
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:47:12 +0900
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 109ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:52:04 +0900
+Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.0ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 94ms (Views: 93.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2015-12-25 16:52:04 +0900
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-25 16:52:04 +0900
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2015-12-25 16:52:04 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-25 16:52:04 +0900
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-25 16:52:04 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-25 16:52:04 +0900
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-12-25 16:52:04 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-25 16:52:04 +0900
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2015-12-25 16:52:04 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-25 16:52:04 +0900
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-25 16:52:04 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-25 16:52:04 +0900
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2015-12-25 16:52:06 +0900
+Processing by TasksController#new as HTML
+  Rendered tasks/_form.html.erb (0.0ms)
+  Rendered tasks/new.html.erb within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (wrong number of arguments (1 for 0)):
+    17:   </div>
+    18:   <div class="field">
+    19:     <%= f.label :category_id %><br>
+    20:     <%= f.collection_select(:category_id , User.all(:si010=>"0"), :id, :username, {:selected=>@task.category_id}) %>
+    21:     <%=%>
+    22:   </div>
+    23:   <div class="field">
+  app/views/tasks/_form.html.erb:20:in `block in _app_views_tasks__form_html_erb__94538551_54599244'
+  app/views/tasks/_form.html.erb:1:in `_app_views_tasks__form_html_erb__94538551_54599244'
+  app/views/tasks/new.html.erb:3:in `_app_views_tasks_new_html_erb__887036300_54238872'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (60.0ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2015-12-25 16:52:06 +0900
+Processing by TasksController#new as HTML
+  Rendered tasks/_form.html.erb (10.0ms)
+  Rendered tasks/new.html.erb within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (wrong number of arguments (1 for 0)):
+    17:   </div>
+    18:   <div class="field">
+    19:     <%= f.label :category_id %><br>
+    20:     <%= f.collection_select(:category_id , User.all(:si010=>"0"), :id, :username, {:selected=>@task.category_id}) %>
+    21:     <%=%>
+    22:   </div>
+    23:   <div class="field">
+  app/views/tasks/_form.html.erb:20:in `block in _app_views_tasks__form_html_erb__94538551_53016516'
+  app/views/tasks/_form.html.erb:1:in `_app_views_tasks__form_html_erb__94538551_53016516'
+  app/views/tasks/new.html.erb:3:in `_app_views_tasks_new_html_erb__887036300_45476820'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (40.0ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2015-12-25 16:52:22 +0900
+Processing by TasksController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered tasks/_form.html.erb (10.0ms)
+  Rendered tasks/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 110ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:52:51 +0900
+Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.0ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 100ms (Views: 100.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2015-12-25 16:52:53 +0900
+Processing by TasksController#new as HTML
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered tasks/_form.html.erb (10.0ms)
+  Rendered tasks/new.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 110ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:52:55 +0900
+Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.0ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 120ms (Views: 120.0ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/tasks/3" for 127.0.0.1 at 2015-12-25 16:52:59 +0900
+Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ClaeSS55upZ7D9SkU5/gnHjBosx/pZqC1rW09XcT3Ew=", "id"=>"3"}
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 3]]
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 16ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:52:59 +0900
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 109ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-25 16:53:00 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-25 16:53:00 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-25 16:53:00 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-25 16:53:00 +0900
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2015-12-25 16:53:00 +0900
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2015-12-25 16:53:00 +0900
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-25 16:53:00 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-25 16:53:00 +0900
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-12-25 16:53:00 +0900
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2015-12-25 16:53:00 +0900
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-25 16:53:00 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-25 16:53:00 +0900
+
+
+Started DELETE "/tasks/5" for 127.0.0.1 at 2015-12-25 16:53:01 +0900
+Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ClaeSS55upZ7D9SkU5/gnHjBosx/pZqC1rW09XcT3Ew=", "id"=>"5"}
+  [1m[35mTask Load (0.0ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  DELETE FROM "tasks" WHERE "tasks"."id" = ?  [["id", 5]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 10ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:53:01 +0900
+Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.0ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 100ms (Views: 100.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-25 16:53:01 +0900
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2015-12-25 16:53:01 +0900
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2015-12-25 16:53:01 +0900
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-25 16:53:01 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-25 16:53:01 +0900
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-25 16:53:01 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-25 16:53:01 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-25 16:53:01 +0900
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-12-25 16:53:01 +0900
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-25 16:53:01 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-25 16:53:01 +0900
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2015-12-25 16:53:01 +0900
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2015-12-25 16:53:02 +0900
+Processing by TasksController#new as HTML
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered tasks/_form.html.erb (10.0ms)
+  Rendered tasks/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 110ms (Views: 100.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:53:37 +0900
+Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.0ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 100ms (Views: 100.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2015-12-25 16:53:39 +0900
+Processing by TasksController#new as HTML
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"
+  Rendered tasks/_form.html.erb (10.0ms)
+  Rendered tasks/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 110ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:53:43 +0900
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 109ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2015-12-25 16:53:45 +0900
+Processing by TasksController#new as HTML
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered tasks/_form.html.erb (15.6ms)
+  Rendered tasks/new.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 109ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2015-12-25 16:53:55 +0900
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ClaeSS55upZ7D9SkU5/gnHjBosx/pZqC1rW09XcT3Ew=", "task"=>{"due_date(1i)"=>"2015", "due_date(2i)"=>"12", "due_date(3i)"=>"25", "category_id"=>"1", "name"=>"test", "done"=>"0"}, "commit"=>"Create Task"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "tasks" ("category_id", "created_at", "done", "due_date", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["category_id", "1"], ["created_at", "2015-12-25 07:53:55.702938"], ["done", "f"], ["due_date", "2015-12-25"], ["name", "test"], ["updated_at", "2015-12-25 07:53:55.702938"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/tasks/6
+Completed 302 Found in 16ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/6" for 127.0.0.1 at 2015-12-25 16:53:55 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered tasks/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 109ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2015-12-25 16:53:55 +0900
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-25 16:53:55 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-25 16:53:55 +0900
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2015-12-25 16:53:55 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-25 16:53:55 +0900
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-25 16:53:55 +0900
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-12-25 16:53:55 +0900
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2015-12-25 16:53:55 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-25 16:53:55 +0900
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-25 16:53:55 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-25 16:53:56 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-25 16:53:56 +0900
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:54:27 +0900
+Processing by TasksController#index as HTML
+  [1m[35mTask Load (15.6ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 109ms (Views: 93.6ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2015-12-25 16:55:13 +0900
+Processing by TasksController#new as HTML
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"
+  Rendered tasks/_form.html.erb (20.0ms)
+  Rendered tasks/new.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 120ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2015-12-25 16:55:16 +0900
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ClaeSS55upZ7D9SkU5/gnHjBosx/pZqC1rW09XcT3Ew=", "task"=>{"due_date(1i)"=>"2015", "due_date(2i)"=>"12", "due_date(3i)"=>"25", "category_id"=>"1", "name"=>"", "done"=>"0"}, "commit"=>"Create Task"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "tasks" ("category_id", "created_at", "done", "due_date", "name", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["category_id", "1"], ["created_at", "2015-12-25 07:55:16.335338"], ["done", "f"], ["due_date", "2015-12-25"], ["name", ""], ["updated_at", "2015-12-25 07:55:16.335338"]]
+  [1m[36m (30.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/tasks/7
+Completed 302 Found in 50ms (ActiveRecord: 30.0ms)
+
+
+Started GET "/tasks/7" for 127.0.0.1 at 2015-12-25 16:55:16 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mTask Load (0.0ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 7]]
+  Rendered tasks/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 130ms (Views: 120.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2015-12-25 16:55:16 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-25 16:55:16 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-25 16:55:16 +0900
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-25 16:55:16 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-25 16:55:16 +0900
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2015-12-25 16:55:16 +0900
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-12-25 16:55:16 +0900
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-25 16:55:16 +0900
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2015-12-25 16:55:16 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-25 16:55:16 +0900
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-25 16:55:16 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-25 16:55:16 +0900
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 16:55:18 +0900
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (15.6ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 109ms (Views: 93.6ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 17:06:46 +0900
+Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.0ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 156ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2015-12-25 17:06:46 +0900
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-25 17:06:46 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-25 17:06:46 +0900
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-25 17:06:46 +0900
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2015-12-25 17:06:46 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-25 17:06:46 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-25 17:06:46 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-25 17:06:46 +0900
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-12-25 17:06:46 +0900
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2015-12-25 17:06:46 +0900
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-25 17:06:46 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-25 17:06:46 +0900
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2015-12-25 17:06:48 +0900
+Processing by TasksController#new as HTML
+  Rendered tasks/_form.html.erb (15.6ms)
+  Rendered tasks/new.html.erb within layouts/application (15.6ms)
+Completed 500 Internal Server Error in 31ms
+
+ActionView::Template::Error (undefined method `collection_sellect' for #<ActionView::Helpers::FormBuilder:0x4c3c0f8>):
+    17:   </div>
+    18:   <div class="field">
+    19:     <%= f.label :category_id %><br>
+    20:     <%= f.collection_sellect :category_id,Category.all, :id,:categoryname %>
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :name %><br>
+  app/views/tasks/_form.html.erb:20:in `block in _app_views_tasks__form_html_erb__94538551_40135464'
+  app/views/tasks/_form.html.erb:1:in `_app_views_tasks__form_html_erb__94538551_40135464'
+  app/views/tasks/new.html.erb:3:in `_app_views_tasks_new_html_erb__887036300_54238872'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (46.8ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2015-12-25 17:06:48 +0900
+Processing by TasksController#new as HTML
+  Rendered tasks/_form.html.erb (15.6ms)
+  Rendered tasks/new.html.erb within layouts/application (15.6ms)
+Completed 500 Internal Server Error in 31ms
+
+ActionView::Template::Error (undefined method `collection_sellect' for #<ActionView::Helpers::FormBuilder:0x6949758>):
+    17:   </div>
+    18:   <div class="field">
+    19:     <%= f.label :category_id %><br>
+    20:     <%= f.collection_sellect :category_id,Category.all, :id,:categoryname %>
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :name %><br>
+  app/views/tasks/_form.html.erb:20:in `block in _app_views_tasks__form_html_erb__94538551_55251384'
+  app/views/tasks/_form.html.erb:1:in `_app_views_tasks__form_html_erb__94538551_55251384'
+  app/views/tasks/new.html.erb:3:in `_app_views_tasks_new_html_erb__887036300_45476820'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (46.8ms)
+
+
+Started GET "/tasks/new" for 127.0.0.1 at 2015-12-25 17:07:08 +0900
+Processing by TasksController#new as HTML
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users"
+  Rendered tasks/_form.html.erb (30.0ms)
+  Rendered tasks/new.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 120ms (Views: 120.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-25 17:07:08 +0900
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-25 17:07:08 +0900
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2015-12-25 17:07:08 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-25 17:07:08 +0900
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2015-12-25 17:07:08 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-25 17:07:08 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-25 17:07:08 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-25 17:07:08 +0900
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-12-25 17:07:08 +0900
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2015-12-25 17:07:08 +0900
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-25 17:07:08 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-25 17:07:08 +0900
+
+
+Started POST "/tasks" for 127.0.0.1 at 2015-12-25 17:07:13 +0900
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ClaeSS55upZ7D9SkU5/gnHjBosx/pZqC1rW09XcT3Ew=", "task"=>{"due_date(1i)"=>"2015", "due_date(2i)"=>"12", "due_date(3i)"=>"25", "category_id"=>"2", "name"=>"", "done"=>"0", "user_id"=>"1"}, "commit"=>"Create Task"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "tasks" ("category_id", "created_at", "done", "due_date", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?)  [["category_id", "2"], ["created_at", "2015-12-25 08:07:13.217938"], ["done", "f"], ["due_date", "2015-12-25"], ["name", ""], ["updated_at", "2015-12-25 08:07:13.217938"], ["user_id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/tasks/8
+Completed 302 Found in 16ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/8" for 127.0.0.1 at 2015-12-25 17:07:13 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mTask Load (0.0ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered tasks/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 94ms (Views: 93.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-25 17:07:13 +0900
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-25 17:07:13 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-25 17:07:13 +0900
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2015-12-25 17:07:13 +0900
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-25 17:07:13 +0900
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2015-12-25 17:07:13 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-25 17:07:13 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-25 17:07:13 +0900
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-12-25 17:07:13 +0900
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2015-12-25 17:07:13 +0900
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-25 17:07:13 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-25 17:07:13 +0900
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 17:07:14 +0900
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 96ms (Views: 95.6ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/tasks/1" for 127.0.0.1 at 2015-12-25 17:13:29 +0900
+Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ClaeSS55upZ7D9SkU5/gnHjBosx/pZqC1rW09XcT3Ew=", "id"=>"1"}
+  [1m[35mTask Load (0.0ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  DELETE FROM "tasks" WHERE "tasks"."id" = ?  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 16ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 17:13:29 +0900
+Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.0ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 109ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2015-12-25 17:13:29 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-25 17:13:29 +0900
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-25 17:13:29 +0900
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-25 17:13:29 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-25 17:13:29 +0900
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2015-12-25 17:13:29 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-25 17:13:29 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-25 17:13:29 +0900
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-12-25 17:13:29 +0900
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2015-12-25 17:13:29 +0900
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-25 17:13:29 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-25 17:13:29 +0900
+
+
+Started DELETE "/tasks/2" for 127.0.0.1 at 2015-12-25 17:13:31 +0900
+Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ClaeSS55upZ7D9SkU5/gnHjBosx/pZqC1rW09XcT3Ew=", "id"=>"2"}
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (15.6ms)[0m  [1mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 16ms (ActiveRecord: 15.6ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 17:13:31 +0900
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 94ms (Views: 93.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2015-12-25 17:13:31 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-25 17:13:31 +0900
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-12-25 17:13:31 +0900
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-25 17:13:31 +0900
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-25 17:13:31 +0900
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-25 17:13:31 +0900
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2015-12-25 17:13:31 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-25 17:13:31 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-25 17:13:31 +0900
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2015-12-25 17:13:31 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-25 17:13:31 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-25 17:13:31 +0900
+
+
+Started DELETE "/tasks/6" for 127.0.0.1 at 2015-12-25 17:13:35 +0900
+Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ClaeSS55upZ7D9SkU5/gnHjBosx/pZqC1rW09XcT3Ew=", "id"=>"6"}
+  [1m[35mTask Load (0.0ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  DELETE FROM "tasks" WHERE "tasks"."id" = ?  [["id", 6]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 16ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 17:13:35 +0900
+Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.0ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 94ms (Views: 93.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-25 17:13:35 +0900
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-25 17:13:35 +0900
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2015-12-25 17:13:35 +0900
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-25 17:13:35 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-25 17:13:36 +0900
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2015-12-25 17:13:36 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-25 17:13:36 +0900
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-12-25 17:13:36 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-25 17:13:36 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-25 17:13:36 +0900
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2015-12-25 17:13:36 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-25 17:13:36 +0900
+
+
+Started DELETE "/tasks/7" for 127.0.0.1 at 2015-12-25 17:13:37 +0900
+Processing by TasksController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ClaeSS55upZ7D9SkU5/gnHjBosx/pZqC1rW09XcT3Ew=", "id"=>"7"}
+  [1m[36mTask Load (10.0ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 7]]
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/tasks
+Completed 302 Found in 10ms (ActiveRecord: 10.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 17:13:37 +0900
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 110ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-25 17:13:37 +0900
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2015-12-25 17:13:37 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-25 17:13:37 +0900
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2015-12-25 17:13:37 +0900
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-25 17:13:37 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-25 17:13:37 +0900
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-25 17:13:37 +0900
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-12-25 17:13:37 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-25 17:13:37 +0900
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2015-12-25 17:13:37 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-25 17:13:37 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-25 17:13:37 +0900
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 17:17:47 +0900
+Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.0ms)[0m  SELECT "tasks".* FROM "tasks"
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories"  WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered tasks/index.html.erb within layouts/application (62.4ms)
+Completed 200 OK in 172ms (Views: 171.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2015-12-25 17:17:47 +0900
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-25 17:17:47 +0900
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-25 17:17:47 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-25 17:17:47 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-25 17:17:47 +0900
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2015-12-25 17:17:47 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-25 17:17:47 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-25 17:17:47 +0900
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-12-25 17:17:47 +0900
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2015-12-25 17:17:47 +0900
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-25 17:17:47 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-25 17:17:47 +0900
+
+
+Started GET "/tasks/8/edit" for 127.0.0.1 at 2015-12-25 17:17:55 +0900
+Processing by TasksController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mCategory Load (0.0ms)[0m  SELECT "categories".* FROM "categories"
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered tasks/_form.html.erb (15.6ms)
+  Rendered tasks/edit.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 125ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-12-25 17:17:58 +0900
+Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.0ms)[0m  SELECT "tasks".* FROM "tasks"
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories"  WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered tasks/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 110ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/8" for 127.0.0.1 at 2015-12-25 17:18:00 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mTask Load (0.0ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", 8]]
+  Rendered tasks/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 109ms (Views: 93.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks/8" for 127.0.0.1 at 2015-12-25 17:18:52 +0900
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mTask Load (0.0ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mCategory Load (0.0ms)[0m  [1mSELECT  "categories".* FROM "categories"  WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered tasks/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 110ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2015-12-25 17:18:52 +0900
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-25 17:18:52 +0900
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-25 17:18:52 +0900
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2015-12-25 17:18:52 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-25 17:18:52 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-25 17:18:52 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-25 17:18:52 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-25 17:18:52 +0900
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2015-12-25 17:18:52 +0900
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2015-12-25 17:18:52 +0900
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-25 17:18:52 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-25 17:18:52 +0900
